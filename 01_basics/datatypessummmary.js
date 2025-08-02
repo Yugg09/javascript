@@ -29,3 +29,33 @@ const bigNumber = 9847848676478n
     console.log("hello");
     
    }
+
+
+   //++++++++++++++++++++++++++++++++
+
+   // TWO TYPES OF MEMORY 
+   //STACK (PRIMITIVE) (hume copy milta h)
+   //HEAP (NON PRIMITIVE) (hume refernce milta h )
+
+   let myYTname = "yugmotion"
+   let anotherName = myYTname
+   anotherName = "mrbeast"
+
+   console.log(myYTname);
+   console.log(anotherName);
+   // stack m hume copy de gayi gyi thi 
+
+
+
+   let userOne = {
+    email: "yc@gmail",
+    upi: "yf@ybl"
+   }
+   
+   let userTwo = userOne
+
+   userTwo.email = "hietsh@gmail"
+   console.log(userOne.email);
+   console.log(userTwo.email);
+   
+   
