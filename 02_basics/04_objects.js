@@ -42,14 +42,43 @@ const userr = [
 ]
 //console.log(userr[1].id);
 //METHODS
-console.log(tinder);
+//console.log(tinder);
 
-console.log(Object.keys(tinder)); //stored as array
-console.log(Object.values(tinder));
-console.log(Object.entries(tinder));
+//console.log(Object.keys(tinder)); //stored as array
+//console.log(Object.values(tinder));
+//console.log(Object.entries(tinder));
 
 //if value exists
-console.log(tinder.hasOwnProperty('isLoggedIn'));
+//console.log(tinder.hasOwnProperty('isLoggedIn'));
+
+
+//DESTRUCTURING OF OBJECTS
+const course = {
+    coursensame: "js in hindi",
+    price: "455",
+    teacher: "yug"
+}
+
+//course.constructor
+//EXTRACTING VALUES
+const {teacher: guru} = course //destructuring
+console.log(guru);
+
+//API > apna kaam kisi aur p daal diya
+//json>
+//{
+    //name:"yug",
+    //coursename: "js",
+    //price: "8409"
+}
+
+//api in array format or in object form
+
+[
+    {},
+    {}.
+]
+
 
 
 
