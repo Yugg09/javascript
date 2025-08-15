@@ -70,14 +70,9 @@ console.log(guru);
     //name:"yug",
     //coursename: "js",
     //price: "8409"
-}
+
 
 //api in array format or in object form
-
-[
-    {},
-    {}.
-]
 
 
 
