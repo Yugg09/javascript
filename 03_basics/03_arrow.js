@@ -65,4 +65,4 @@ console.log(addtwo(6,7));
 //arrow in loops
 
 const myarray = [3,5,6]
-myarray.forEach( () => () )
+//myarray.forEach( () => () )
