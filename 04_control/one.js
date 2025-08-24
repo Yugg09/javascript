@@ -14,5 +14,7 @@ console.log("grater than 50");
 
 const balance = 1000
 //if(balance > 500) console.log("test"); //implicit
+ 
+
 
 
