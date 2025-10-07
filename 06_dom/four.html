@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>chai aur code  | DOM </title>
+</head>
+<body style="background-color: black; color: bisque;">
+    <ul class="language">
+        <li>javascript</li>
+    </ul>
+</body>
+<script>
+    function addLanguage(langName){
+       const li =  document.createElement('li');
+       li.innerHTML = `${langName}`
+       document.querySelector('.language').appendChild(li)
+    }
+    addLanguage("python")
+    addLanguage("typescript")
+
+    // optimised approach
+
+    function addoptilanguage(langname){
+        const li = document.createElement('li')
+        li.appendChild(document.createTextNode(langname))
+        document.querySelector('.language').appendChild(li)
+    }
+    addLanguage("ruby")
+
+
+    // edit 
+
+    const secondlang = document.querySelector("li:nth-child(2)")
+   // secondlang.innerHTML = "yug"
+   const newli = document.createElement('li') // created whole new elemen to replace with
+   newli.textContent = "yug"
+   secondlang.replaceWith(newli)
+
+   //edit
+   const firstlang = document.querySelector("li:nth-child(1)")
+   firstlang.outerHTML = '<li>typescript</li>'
+   
+
+   //remove
+   const lastlang = document.querySelector('li:last-child')
+   lastlang.remove()
+</script>
+</html>
