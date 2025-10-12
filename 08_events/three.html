@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>chai aur javascript</h1>
+    <button id="stop">stop</button>
+    <button id="start">start</button>
+</body>
+<script>
+     const saydate = function(str){
+        console.log(str, Date.now()); // it can take input
+        
+    }
+
+     // i want like if we click on start button then only it will startand if we click on stop button then it will stop
+        let interval; // to store interval id
+        document.querySelector('#start').addEventListener('click', function(){
+            interval = setInterval(saydate, 2000, "yug") // it will run every 2 sec
+        })
+        document.querySelector('#stop').addEventListener('click', function(){
+            clearInterval(interval) // to stop the interval
+        })
+
+
+    
+   
+
+
+     
+
+
+   
+    
+</script>
+</html>
