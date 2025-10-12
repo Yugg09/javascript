@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>chai aur code</h1>
+    <button id="stop">stop</button>
+</body>
+<script>
+    
+    const yug = function(){ // 2 sec ke baad execute
+        console.log('yug');
+    }
+    
+    const changetext = function(){
+        document.querySelector('h1').
+        innerHTML = "best js series"
+    }
+    const changeme = setTimeout(changetext, 2000)
+    setTimeout(yug, 2000)
+
+    // this is just to stop that set timeout
+    document.querySelector('#stop').addEventListener('click', function(){
+     clearTimeout(changeme)
+     console.log("stopped");
+     
+    })
+</script>
+</html>
