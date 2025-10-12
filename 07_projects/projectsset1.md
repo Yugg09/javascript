@@ -57,3 +57,26 @@ form.addEventListener('submit', function (e) {
     results.innerHTML = `<span>${bmi}</span>`;
   }
 });
+```
+## project 3
+
+```javscript
+//document.getElementById('clock')
+const clock = document.querySelector('#clock')
+
+
+
+//jitni baar 1 second maangoge utni baar ye function chalega
+//1000ms = 1 second
+//5000ms = 5 seconds
+//2000ms = 2 seconds
+
+setInterval(function(){
+    let date = new Date()
+    //console.log(date.toLocaleTimeString())
+clock.innerHTML = date.toLocaleTimeString()
+
+}, 1000)
+
+```
+## project 4
